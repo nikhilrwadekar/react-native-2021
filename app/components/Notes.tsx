@@ -3,7 +3,7 @@ import {
     StyleSheet,
     Text,
     View,
-    TouchableOpacityComponent
+    TouchableOpacity
 } from "react-native";
 
 // Types
@@ -22,9 +22,9 @@ const Notes = ({ data, onDelete }: NoteProps) => {
             <Text style={styles.noteText}>{date}</Text>
             <Text style={styles.noteText}>{note}</Text>
 
-            <TouchableOpacityComponent onPress={onDelete} style={styles.noteDelete}>
+            <TouchableOpacity onPress={onDelete} style={styles.noteDelete}>
                 <Text style={styles.noteDeleteText}>X</Text>
-            </TouchableOpacityComponent>
+            </TouchableOpacity>
         </View>
     )
 }
